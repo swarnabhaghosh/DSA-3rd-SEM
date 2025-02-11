@@ -28,12 +28,11 @@ void display()
     if(top==-1)
     {
         printf("Stack is empty");
-        return 0;
     }
     else
     {
-        for(int i=0;i<=top;i++)
-            printf("%d ",Stack[i]);
+        for(int i=top;i>=0;i--)
+            printf("%d \n",Stack[i]);
     }
 }
 void main()
