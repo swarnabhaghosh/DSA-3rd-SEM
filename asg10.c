@@ -67,44 +67,11 @@ void main()
     {
         printf("%d ",arr[i]);
     }
-    while(y)
-    {
-        printf("\n1. Linear search \n2. Binary search \n3. Interpolation search \n4. Exit \nEnter choice:");
-        scanf("%d",&c);
-        if(c==1 || c==2 || c==3)
-        {
-            printf("\nEnter element to be searched:");
-            scanf("%d",&d);
-        }
-        switch(c)
-        {
-        case 1:
-            a=lsearch(arr,d,n);
-            if(a!=-1)
-                printf("%d found at %d",d,a);
-            else
-                printf("not found");
-            break;
-        case 2:
-            a=lsearch(arr,d,n);
-            if(a!=-1)
-                printf("%d found at %d",d,a);
-            else
-                printf("not found");
-            break;
-        case 3:
-            a=lsearch(arr,d,n);
-            if(a!=-1)
-                printf("%d found at %d",d,a);
-            else
-                printf("not found");
-            break;
-        case 4:
-            y=0;
-            printf("\nSeaching ended");
-            break;
-        default:
-            printf("Incorrect input");
-        }
-    }
+    printf("\nEnter element to be searched:");
+    scanf("%d",&d);
+    a=bsearch(arr,0,n-1,d);
+    if(a!=-1)
+        printf("%d found at %d",d,a);
+    else
+        printf("not found");
 }
