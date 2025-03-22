@@ -74,7 +74,7 @@ void main()
 {
     char postfix[20];
     int result;
-    printf("enter postfix:");
+    printf("enter postfix expression:");
     scanf("%s",postfix);
     result=res(postfix);
     printf("%d",result);
