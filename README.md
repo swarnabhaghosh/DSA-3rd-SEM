@@ -1,5 +1,3 @@
-Here's a suitable **README** for your repository:
-
 ---
 
 # Data Structures and Algorithms (DSA) - 3rd Semester
